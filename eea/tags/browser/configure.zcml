@@ -1,0 +1,17 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  i18n_domain="eea">
+
+  <browser:resource
+    name="eea.tags.css"
+    file="./css/tags.css"
+   />
+
+  <browser:resource
+    name="eea.tags.js"
+    file="./js/tags.js"
+    />
+
+</configure>
