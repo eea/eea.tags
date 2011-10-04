@@ -1,8 +1,11 @@
 Changelog
 =========
 
-4.0-dev - (unreleased)
-----------------------
+4.0 - (2011-10-04)
+------------------
+
+* Plone 4+ compatible version
+  [avoinea]
 
 
 1.0 - (2011-10-04)
