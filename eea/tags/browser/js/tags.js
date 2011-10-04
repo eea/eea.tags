@@ -46,6 +46,7 @@ jQuery.fn.eeatags = function(options){
     }
 
     // Cleanup
+    jQuery('[name*=keywords]', self).parent().remove();
     jQuery('#existingTagsSection', self).remove();
     jQuery('#newTagsSection', self).remove();
 
