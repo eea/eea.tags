@@ -3,10 +3,13 @@ Changelog
 
 4.2-dev - (unreleased)
 ----------------------
+* Bug fix: Fixed to work also when keywords are required. Pre-populate also with
+  new tags
+  [voineali #4773 (EEA)]
 
 4.1 - (2011-11-18)
 ------------------
-* Rerelease broken egg  
+* Rerelease broken egg
 
 4.0 - (2011-11-18)
 ------------------

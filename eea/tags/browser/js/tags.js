@@ -28,6 +28,19 @@ jQuery.fn.eeatags = function(options){
       });
     }
 
+    // Handle new tags
+    prePopulate = jQuery('textarea[name*=_keywords]', self);
+    if(prePopulate.length){
+      prePopulate = prePopulate.val().split('\n');
+      jQuery.each(prePopulate, function(index){
+        var val = this.trim();
+        if(val){
+          var item = {id: val, name: val};
+          self.prePopulate.push(item);
+        }
+      });
+    }
+
     self.tags = [];
     var tags = jQuery('select[name*=existing]', self);
     if(tags.length){
