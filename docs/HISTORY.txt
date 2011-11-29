@@ -1,6 +1,9 @@
 Changelog
 =========
 
+4.3-dev - (unreleased)
+----------------------
+
 4.2 - (2011-11-29)
 ------------------
 * Bug fix: Fixed to work also when keywords are required. Pre-populate also with
