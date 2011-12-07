@@ -3,6 +3,7 @@ Changelog
 
 4.3-dev - (unreleased)
 ----------------------
+* Bug fix: Fixed to work also when new keywords are not allowed. [david.batranu]
 
 4.2 - (2011-11-29)
 ------------------

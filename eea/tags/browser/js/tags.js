@@ -9,7 +9,14 @@ jQuery.fn.eeatags = function(options){
     }
 
     var self = jQuery(this).addClass('eea-tags');
-    self.wid = jQuery('[id*=keywords]', self).attr('id');
+    self.allowNewTokens = false;
+    self.wid = 'subject_keywords';
+
+    var new_keywords = jQuery('[id*=keywords]', self);
+    if(new_keywords.length){
+        self.wid = new_keywords.attr('id');
+        self.allowNewTokens = true;
+    }
 
     self.prePopulate = [];
     var prePopulate = jQuery('select[name*=existing]', self);
@@ -69,14 +76,16 @@ jQuery.fn.eeatags = function(options){
       .attr('id', self.wid)
       .attr('name', self.wid + ":lines").appendTo(self);
 
+    self.noResultsText = self.allowNewTokens ? 'Tag not found. Press "Enter" to add it' : 'No results';
+
     self.widget.tokenInput(self.tags, {
       theme: 'facebook',
-      allowNewTokens: true,
+      allowNewTokens: self.allowNewTokens,
       tokenValue: 'name',
       tokenDelimiter: '\n',
       hintText: "Start typing to get some tags suggestions",
       searchingText: "Searching...",
-      noResultsText: 'Tag not found. Press "Enter" to add it',
+      noResultsText: self.noResultsText,
       preventDuplicates: true,
       prePopulate: self.prePopulate
     });
