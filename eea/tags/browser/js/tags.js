@@ -18,20 +18,23 @@ jQuery.fn.eeatags = function(options){
         self.allowNewTokens = true;
     }
 
-    self.prePopulate = [];
+    var existingTags = [];
     var prePopulate = jQuery('select[name*=existing]', self);
     if(prePopulate.length){
       var selected = prePopulate.val();
-      jQuery.each(selected !== null ? selected : [], function(index){
-        var item = {id: this, name: this};
-        self.prePopulate.push(item);
+      jQuery.each(selected !== null ? selected : [], function(index, val){
+        if(existingTags.indexOf(val) === -1){
+          existingTags.push(val);
+        }
       });
     }else{
       prePopulate = jQuery('input[type=checkbox]:checked', self);
       jQuery.each(prePopulate, function(index){
         var context = jQuery(this);
-        var item = {id: context.val(), name: context.val()};
-        self.prePopulate.push(item);
+        var item = context.val();
+        if(existingTags.indexOf(item) === -1){
+          existingTags.push(item);
+        }
       });
     }
 
@@ -41,12 +44,15 @@ jQuery.fn.eeatags = function(options){
       prePopulate = prePopulate.val().split('\n');
       jQuery.each(prePopulate, function(index){
         var val = this.trim();
-        if(val){
-          var item = {id: val, name: val};
-          self.prePopulate.push(item);
+        if(val && existingTags.indexOf(val) === -1){
+          existingTags.push(val);
         }
       });
     }
+
+    self.prePopulate = jQuery.map(existingTags, function(val, idx){
+      return {id: val, name: val};
+    });
 
     self.tags = [];
     var tags = jQuery('select[name*=existing]', self);

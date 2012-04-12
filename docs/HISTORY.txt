@@ -3,6 +3,8 @@ Changelog
 
 4.4-dev - (unreleased)
 ----------------------
+* Bug fix: Fixed duplicate tags in edit form
+  [voineali #4862]
 
 4.3 - (2011-12-15)
 ------------------
