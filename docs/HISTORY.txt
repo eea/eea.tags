@@ -1,6 +1,10 @@
 Changelog
 =========
 
+4.5-dev (unreleased)
+--------------------
+
+
 4.4 - (2012-04-26)
 ------------------
 * Bug fix: Fixed duplicate tags in edit form
