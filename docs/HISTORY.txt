@@ -3,7 +3,8 @@ Changelog
 
 4.5-dev (unreleased)
 --------------------
-
+* Bug fix: use jQuery.inArray instead of indexOf to avoid errors in IE < 9
+  [ichimdav #5355]
 
 4.4 - (2012-04-26)
 ------------------

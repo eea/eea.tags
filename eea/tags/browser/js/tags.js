@@ -23,7 +23,7 @@ jQuery.fn.eeatags = function(options){
     if(prePopulate.length){
       var selected = prePopulate.val();
       jQuery.each(selected !== null ? selected : [], function(index, val){
-        if(existingTags.indexOf(val) === -1){
+        if(jQuery.inArray(val, existingTags) === -1){
           existingTags.push(val);
         }
       });
@@ -32,7 +32,7 @@ jQuery.fn.eeatags = function(options){
       jQuery.each(prePopulate, function(index){
         var context = jQuery(this);
         var item = context.val();
-        if(existingTags.indexOf(item) === -1){
+        if(jQuery.inArray(item, existingTags) === -1){
           existingTags.push(item);
         }
       });
@@ -44,7 +44,7 @@ jQuery.fn.eeatags = function(options){
       prePopulate = prePopulate.val().split('\n');
       jQuery.each(prePopulate, function(index){
         var val = this.trim();
-        if(val && existingTags.indexOf(val) === -1){
+        if(val && jQuery.inArray(val, existingTags) === -1){
           existingTags.push(val);
         }
       });
