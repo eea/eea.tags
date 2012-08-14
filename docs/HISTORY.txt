@@ -3,6 +3,8 @@ Changelog
 
 4.6-dev - (unreleased)
 ----------------------
+* Feature: Added buildouts folder which will contain various samples of configurations
+  [ghicaale #5418]
 
 4.5 - (2012-07-13)
 ------------------
