@@ -1,8 +1,11 @@
 Changelog
 =========
 
-4.6-dev - (unreleased)
+4.7-dev - (unreleased)
 ----------------------
+
+4.6 - (2012-08-28)
+------------------
 * Feature: Added buildouts folder which will contain various samples of configurations
   [ghicaale #5418]
 
