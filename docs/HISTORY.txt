@@ -1,8 +1,12 @@
 Changelog
 =========
 
-4.7-dev - (unreleased)
+5.0-dev - (unreleased)
 ----------------------
+* Feature: Optimize keywords widget by using AJAX calls instead of loading tags
+  [avoinea refs #5]
+* Feature: Added custom eea.tags widget for keywords
+  [avoinea refs #5]
 
 4.6 - (2012-08-28)
 ------------------

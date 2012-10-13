@@ -1,6 +1,4 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts">
- <javascript cacheable="True" compression="safe" cookable="True"
-    enabled="True" expression="" id="++resource++eea.tags.js"
-    inline="False" insert-after="jquery.js" />
+ <javascript id="++resource++eea.tags.js" remove="True" />
 </object>
