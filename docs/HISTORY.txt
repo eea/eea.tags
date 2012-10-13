@@ -3,15 +3,19 @@ Changelog
 
 4.7-dev - (unreleased)
 ----------------------
+* Bug fix: Fixed HISTORY.txt markup
+  [ghicaale]
 
 4.6 - (2012-08-28)
 ------------------
-* Feature: Added buildouts folder which will contain various samples of configurations
+* Feature: Added buildouts folder which will contain 
+  various samples of configurations
   [ghicaale #5418]
 
 4.5 - (2012-07-13)
 ------------------
-* Bug fix: use jQuery.inArray instead of indexOf to avoid errors in IE < 9
+* Bug fix: Use jQuery.inArray instead of indexOf
+  to avoid errors in IE < 9
   [ichimdav #5355]
 
 4.4 - (2012-04-26)
@@ -21,17 +25,19 @@ Changelog
 
 4.3 - (2011-12-15)
 ------------------
-* Bug fix: Fixed to work also when new keywords are not allowed. [david.batranu]
+* Bug fix: Fixed to work also when new keywords are not allowed. 
+  [david.batranu]
 
 4.2 - (2011-11-29)
 ------------------
-* Bug fix: Fixed to work also when keywords are required. Pre-populate also with
-  new tags
+* Bug fix: Fixed to work also when keywords are required.
+  Pre-populate also with new tags
   [voineali #4773 (EEA)]
 
 4.1 - (2011-11-18)
 ------------------
-* Rerelease broken egg
+* Re-release broken egg
+  [ghicaale]
 
 4.0 - (2011-11-18)
 ------------------
