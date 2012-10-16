@@ -1,8 +1,11 @@
 Changelog
 =========
 
-5.0-dev - (unreleased)
+5.1-dev - (unreleased)
 ----------------------
+
+5.0 - (2012-10-16)
+------------------
 * Upgrade step: Within "Plone > Site setup > Add-ons" click on
   upgrade button available for eea.tags
 * Feature: Optimize keywords widget by using AJAX calls instead of loading tags
