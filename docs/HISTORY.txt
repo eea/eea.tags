@@ -1,14 +1,20 @@
 Changelog
 =========
 
-4.7-dev - (unreleased)
+5.0-dev - (unreleased)
 ----------------------
+* Upgrade step: Within "Plone > Site setup > Add-ons" click on
+  upgrade button available for eea.tags
+* Feature: Optimize keywords widget by using AJAX calls instead of loading tags
+  [avoinea refs #5 github, refs #5595 eea]
+* Feature: Added custom eea.tags widget for keywords
+  [avoinea refs #5 github, refs #5595 eea]
 * Bug fix: Fixed HISTORY.txt markup
   [ghicaale]
 
 4.6 - (2012-08-28)
 ------------------
-* Feature: Added buildouts folder which will contain 
+* Feature: Added buildouts folder which will contain
   various samples of configurations
   [ghicaale #5418]
 
@@ -25,7 +31,7 @@ Changelog
 
 4.3 - (2011-12-15)
 ------------------
-* Bug fix: Fixed to work also when new keywords are not allowed. 
+* Bug fix: Fixed to work also when new keywords are not allowed.
   [david.batranu]
 
 4.2 - (2011-11-29)

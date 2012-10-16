@@ -1,6 +1,4 @@
 <?xml version="1.0"?>
-<object name="portal_css" meta_type="Stylesheets Registry" autogroup="False">
- <stylesheet title="" cacheable="True" compression="safe" cookable="True"
-    enabled="True" expression="" id="++resource++eea.tags.css"
-    media="screen" rel="stylesheet" rendering="import" />
+<object name="portal_css">
+ <stylesheet id="++resource++eea.tags.css" remove="True" />
 </object>
