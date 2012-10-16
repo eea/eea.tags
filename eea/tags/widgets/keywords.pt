@@ -34,11 +34,11 @@
                         allowRolesToAddKeywords site_props/allowRolesToAddKeywords|nothing;">
 
                     <span class="eea-tags-i18n" i18n:domain="eea">
-                        <p class="baseUrl" tal:content="here/absolute_url" />
-                        <p class="hintText" i18n:translate="hintText">Start typing to get some tags suggestions</p>
-                        <p class="searchingText" i18n:translate="searchingText">Searching...</p>
-                        <p class="notFound" i18n:translate="notFound">Tag not found. Press "Enter" to add it</p>
-                        <p class="noResults" i18n:translate="noResults">No results</p>
+                        <p class="baseUrl" tal:content="string:${here/absolute_url}/" />
+                        <p class="hintText" i18n:translate="">Start typing to get some tags suggestions</p>
+                        <p class="searchingText" i18n:translate="">Searching...</p>
+                        <p class="noResultsText" i18n:translate="">Tag not found. Press 'Enter' to add it</p>
+                        <p class="noResults" i18n:translate="">No results</p>
                     </span>
 
                         <div tal:condition="allowedKeywords" id="existingTagsSection">

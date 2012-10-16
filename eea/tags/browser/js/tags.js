@@ -8,7 +8,11 @@ EEA.Tags = function(context, options){
   self.context = context;
 
   self.settings = {
-    'base_url': ''
+    baseUrl: '',
+    tokenDelimiter: "\n",
+    hintText: "Start typing to get some tags suggestions",
+    searchingText: "Searching...",
+    noResultsText: "No results"
   };
 
   if(options){
@@ -32,7 +36,7 @@ EEA.Tags.prototype = {
     }
 
     var fieldname = self.wid.split('_')[0];
-    jQuery.getJSON(self.settings.base_url + 'eea.tags.json', {fieldname: fieldname}, function(data){
+    jQuery.getJSON(self.settings.baseUrl + 'eea.tags.json', {fieldname: fieldname}, function(data){
       self.update(data);
     });
 
@@ -40,7 +44,7 @@ EEA.Tags.prototype = {
 
   update: function(tags){
     var self = this;
-    self.tags = tags['all'];
+    self.tags = tags.all;
     var existingTags = [];
 
     // Handle new tags
@@ -74,10 +78,10 @@ EEA.Tags.prototype = {
       theme: 'facebook',
       allowNewTokens: self.allowNewTokens,
       tokenValue: 'name',
-      tokenDelimiter: '\n',
-      hintText: "Start typing to get some tags suggestions",
-      searchingText: "Searching...",
-      noResultsText: self.noResultsText,
+      tokenDelimiter: self.settings.tokenDelimiter,
+      hintText: self.settings.hintText,
+      searchingText: self.settings.searchingText,
+      noResultsText: self.settings.noResultsText,
       preventDuplicates: true,
       prePopulate: self.prePopulate
     });
@@ -89,12 +93,20 @@ EEA.Tags.prototype = {
 jQuery.fn.eeatags = function(options){
   options = options || {};
   return this.each(function(){
-    var context = jQuery(this);
-    var base_url = jQuery('.baseUrl');
-    if(base_url.length){
-      options['base_url'] = base_url.text() + '/';
+    var context = jQuery(this).addClass('eea-tags');
+
+    var config = {};
+    if(options){
+      jQuery.extend(config, options);
     }
-    var tags = new EEA.Tags(context, options);
+
+    var messages = jQuery('.eea-tags-i18n', context);
+    config.baseUrl = jQuery('.baseUrl', messages).text();
+    config.hintText = jQuery('.hintText', messages).text();
+    config.searchingText = jQuery('.searchingText', messages).text();
+    config.noResultsText = jQuery('.noResultsText', messages).text();
+
+    var tags = new EEA.Tags(context, config);
     context.data('EEATags', tags);
   });
 };

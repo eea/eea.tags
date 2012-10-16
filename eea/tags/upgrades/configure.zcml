@@ -5,7 +5,7 @@
 
   <!-- 1.0 => 5.0 -->
   <genericsetup:upgradeSteps
-    source="1.0"
+    source="*"
     destination="5.0"
     profile="eea.tags:default">
 

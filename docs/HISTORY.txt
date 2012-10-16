@@ -3,10 +3,12 @@ Changelog
 
 5.0-dev - (unreleased)
 ----------------------
+* Upgrade step: Within "Plone > Site setup > Add-ons" click on
+  upgrade button available for eea.tags
 * Feature: Optimize keywords widget by using AJAX calls instead of loading tags
-  [avoinea refs #5]
+  [avoinea refs #5 github, refs #5595 eea]
 * Feature: Added custom eea.tags widget for keywords
-  [avoinea refs #5]
+  [avoinea refs #5 github, refs #5595 eea]
 
 4.6 - (2012-08-28)
 ------------------
