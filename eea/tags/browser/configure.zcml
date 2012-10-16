@@ -14,4 +14,11 @@
     file="./js/tags.js"
     />
 
+  <browser:view
+    for="*"
+    name="eea.tags.json"
+    class=".tags.QueryTags"
+    permission="zope2.View"
+    />
+
 </configure>
