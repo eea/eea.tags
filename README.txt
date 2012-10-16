@@ -13,6 +13,12 @@ Install
 - Add eea.tags to your eggs and zcml section in your buildout and re-run buildout.
 - Install eea.tags within Site Setup > Add-ons
 
+Upgrade
+=======
+
+- Within "Plone > Site setup > Add-ons" click on upgrade button available for
+  eea.tags (if any)
+
 
 Copyright and license
 =====================
@@ -30,6 +36,11 @@ Contributor(s)
 - Alin Voinea (Eau de Web),
 - Antonio De Marinis (European Environment Agency),
 - Alec Ghica (Eau de Web),
+
+Credits
+-------
+- Davide Moro (Redomino)
+- Mikel Larreategi
 
 More details under docs/License.txt
 
