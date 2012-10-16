@@ -14,7 +14,7 @@ class TestSetup(unittest.TestCase):
         """
         portal = self.layer['portal']
         cssRegistry = getToolByName(portal, 'portal_css')
-        self.assertTrue(
+        self.assertFalse(
             "++resource++eea.tags.css"
             in cssRegistry.getResourceIds()
         )
@@ -61,7 +61,7 @@ class TestSetup(unittest.TestCase):
         """
         portal = self.layer['portal']
         jsRegistry = getToolByName(portal, 'portal_javascripts')
-        self.assertTrue(
+        self.assertFalse(
             "++resource++eea.tags.js"
             in jsRegistry.getResourceIds()
         )
