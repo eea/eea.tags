@@ -1,6 +1,13 @@
 ========
 EEA Tags
 ========
+.. image:: http://ci.eionet.europa.eu/job/eea.tags-www/badge/icon
+  :target: http://ci.eionet.europa.eu/job/eea.tags-www/lastBuild
+.. image:: http://ci.eionet.europa.eu/job/eea.tags-plone4/badge/icon
+  :target: http://ci.eionet.europa.eu/job/eea.tags-plone4/lastBuild
+
+Introduction
+============
 EEA Tags is a Google+/Facebook like replacement for the Plone keywords widget.
 
 
