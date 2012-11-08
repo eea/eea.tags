@@ -9,3 +9,8 @@ install:
 
 script:
   - bin/test
+
+notifications:
+  email:
+    recipients:
+      - eea-github@googlegroups.com
