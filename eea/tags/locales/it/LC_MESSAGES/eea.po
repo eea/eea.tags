@@ -3,30 +3,30 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2012-10-16 15:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Davide Moro <davide.moro@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
+"Language-Code: it\n"
+"Language-Name: Italiano\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: DOMAIN\n"
+"Domain: eea\n"
 
 #: ../../tags/widgets/keywords.pt:41
 msgid "No results"
-msgstr ""
+msgstr "Nessun risultato"
 
 #: ../../tags/widgets/keywords.pt:39
 msgid "Searching..."
-msgstr ""
+msgstr "Sto cercando..."
 
 #: ../../tags/widgets/keywords.pt:38
 msgid "Start typing to get some tags suggestions"
-msgstr ""
+msgstr "Inizia a digitare qualcosa per ottenere dei suggerimenti"
 
 #: ../../tags/widgets/keywords.pt:40
 msgid "Tag not found. Press 'Enter' to add it"
-msgstr ""
+msgstr "Tag non trovato. Digita 'Enter' per aggiungerlo"
 
