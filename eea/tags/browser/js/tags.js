@@ -113,7 +113,7 @@ jQuery.fn.eeatags = function(options){
 
 // On document ready
 jQuery(document).ready(function(){
-  var widgets = jQuery('.ArchetypesKeywordWidget');
+  var widgets = jQuery('.ArchetypesKeywordWidget, .ArchetypesTagsWidget');
   if(!widgets.length){
     return;
   }
