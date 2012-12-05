@@ -9,24 +9,24 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
+"Language-Code: fi\n"
+"Language-Name: Suomeksi\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: DOMAIN\n"
+"Domain: eea.tags\n"
 
 #: ../../tags/widgets/keywords.pt:41
 msgid "No results"
-msgstr ""
+msgstr "Ei tuloksia"
 
 #: ../../tags/widgets/keywords.pt:39
 msgid "Searching..."
-msgstr ""
+msgstr "Etsitään..."
 
 #: ../../tags/widgets/keywords.pt:38
 msgid "Start typing to get some tags suggestions"
-msgstr ""
+msgstr "Järjestelmä ehdottaa avainsanoja sitä mukaa kuin kirjoitat."
 
 #: ../../tags/widgets/keywords.pt:40
 msgid "Tag not found. Press 'Enter' to add it"
-msgstr ""
+msgstr "Tuntematon avainsana. Paina 'Enter' käyttääksesi sitä."
 
