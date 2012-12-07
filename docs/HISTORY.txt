@@ -3,6 +3,8 @@ Changelog
 
 5.1-dev - (unreleased)
 ----------------------
+* Added German translations
+  [skaeser]
 
 5.0 - (2012-10-16)
 ------------------
