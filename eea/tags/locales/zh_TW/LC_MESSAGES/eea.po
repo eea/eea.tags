@@ -1,32 +1,32 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: eea.tags\n"
 "POT-Creation-Date: 2012-10-16 15:15+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2013-01-08 16:16+0800\n"
+"Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
+"Language-Code: zh-tw\n"
+"Language-Name: Traditional Chinese\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: DOMAIN\n"
+"Domain: eea.tags\n"
 
 #: ../../tags/widgets/keywords.pt:41
 msgid "No results"
-msgstr ""
+msgstr "沒有結果"
 
 #: ../../tags/widgets/keywords.pt:39
 msgid "Searching..."
-msgstr ""
+msgstr "搜尋..."
 
 #: ../../tags/widgets/keywords.pt:38
 msgid "Start typing to get some tags suggestions"
-msgstr ""
+msgstr "輸入同時會啟動 tag 提示"
 
 #: ../../tags/widgets/keywords.pt:40
 msgid "Tag not found. Press 'Enter' to add it"
-msgstr ""
+msgstr "這個 tag 之前未被建立，按 Enter 就可以新增"
 
