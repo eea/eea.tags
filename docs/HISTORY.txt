@@ -5,6 +5,8 @@ Changelog
 ----------------------
 * Added German translations
   [skaeser]
+* Added French translations
+  [toutpt]
 
 5.0 - (2012-10-16)
 ------------------

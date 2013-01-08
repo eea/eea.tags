@@ -9,24 +9,23 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
 #: ../../tags/widgets/keywords.pt:41
 msgid "No results"
-msgstr ""
+msgstr "Aucun résultat"
 
 #: ../../tags/widgets/keywords.pt:39
 msgid "Searching..."
-msgstr ""
+msgstr "Recherche..."
 
 #: ../../tags/widgets/keywords.pt:38
 msgid "Start typing to get some tags suggestions"
-msgstr ""
+msgstr "Commencer à saisir pour obtenir des suggestions de mots-clés"
 
 #: ../../tags/widgets/keywords.pt:40
 msgid "Tag not found. Press 'Enter' to add it"
-msgstr ""
-
+msgstr "Mot-clé non trouvé. Utiliser la touche 'Entrer' pour l'ajouter"
