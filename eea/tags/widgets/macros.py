@@ -2,8 +2,10 @@
 """
 from Products.Five.browser import BrowserView
 try:
-    from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile
-except ImportError:  # BBB
+    from zope.browserpage import viewpagetemplatefile
+    ViewPageTemplateFile = viewpagetemplatefile.ViewPageTemplateFile
+except ImportError:
+    # BBB
     from zope.app.pagetemplate.viewpagetemplatefile import ViewPageTemplateFile
 
 class Tags(BrowserView):
