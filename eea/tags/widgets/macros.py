@@ -1,7 +1,10 @@
 """ Macros
 """
 from Products.Five.browser import BrowserView
-from zope.app.pagetemplate.viewpagetemplatefile import ViewPageTemplateFile
+try:
+    from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile
+except ImportError:  # BBB
+    from zope.app.pagetemplate.viewpagetemplatefile import ViewPageTemplateFile
 
 class Tags(BrowserView):
     """ EEA Tags macros
