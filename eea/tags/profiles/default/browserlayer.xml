@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<layers>
+    <layer name="eea.tags.layer" 
+           interface="eea.tags.browser.interfaces.IEEATagsLayer" />
+</layers>

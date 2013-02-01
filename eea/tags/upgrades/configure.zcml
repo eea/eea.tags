@@ -1,19 +1,30 @@
 <configure
-  xmlns="http://namespaces.zope.org/zope"
-  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-  i18n_domain="eea">
+        xmlns="http://namespaces.zope.org/zope"
+        xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+        i18n_domain="eea">
 
-  <!-- 1.0 => 5.0 -->
-  <genericsetup:upgradeSteps
-    source="*"
-    destination="5.0"
-    profile="eea.tags:default">
+    <!-- 1.0 => 5.0 -->
+    <genericsetup:upgradeSteps
+            source="*"
+            destination="5.0"
+            profile="eea.tags:default">
 
-    <genericsetup:upgradeDepends
-      title="Upgrade step for eea.tags: import css js"
-      import_steps="cssregistry jsregistry"
-      />
+        <genericsetup:upgradeDepends
+                title="Upgrade step for eea.tags: import css js"
+                import_steps="cssregistry jsregistry"
+                />
 
-  </genericsetup:upgradeSteps>
+    </genericsetup:upgradeSteps>
 
+    <genericsetup:upgradeSteps
+            source="*"
+            destination="5.2"
+            profile="eea.tags:default">
+
+        <genericsetup:upgradeDepends
+                title="Upgrade step for eea.tags: import browserlayer"
+                import_steps="browserlayer"
+                />
+
+    </genericsetup:upgradeSteps>
 </configure>

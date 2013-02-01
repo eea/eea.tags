@@ -13,6 +13,7 @@
   <adapter name="eea.tags"
     for="Products.Archetypes.interfaces.metadata.IExtensibleMetadata"
     factory=".subtypes.SchemaModifier"
+    provides="archetypes.schemaextender.interfaces.ISchemaModifier"
     />
 
 </configure>

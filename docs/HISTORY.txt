@@ -3,6 +3,11 @@ Changelog
 
 5.2-dev - (unreleased)
 ----------------------
+* Upgrade step: Within "Plone > Site setup > Add-ons" click on
+  upgrade button available for eea.tags
+* Feature: added browser layer for this package in order to avoid checking for
+  package installation in subtypes.py
+  [ichimdav #13677]
 
 5.1 - (2013-01-15)
 ------------------

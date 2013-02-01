@@ -1,13 +1,16 @@
 """ Overrides default keywords widget
 """
 from zope.interface import implements
-from Products.CMFCore.utils import getToolByName
-from archetypes.schemaextender.interfaces import ISchemaModifier
+from archetypes.schemaextender.interfaces import ISchemaModifier, \
+    IBrowserLayerAwareExtender
+from eea.tags.browser.interfaces import IEEATagsLayer
+
 
 class SchemaModifier(object):
     """ EEA Tags keywords widget
     """
-    implements(ISchemaModifier)
+    implements(ISchemaModifier, IBrowserLayerAwareExtender)
+    layer = IEEATagsLayer
 
     def __init__(self, context):
         self.context = context
@@ -16,13 +19,6 @@ class SchemaModifier(object):
         """ Modify schema
         """
         if 'subject' not in schema:
-            return
-
-        qtool = getToolByName(self.context, 'portal_quickinstaller', None)
-        if not qtool:
-            return
-
-        if not qtool.isProductInstalled('eea.tags'):
             return
 
         xfield = schema['subject'].copy()

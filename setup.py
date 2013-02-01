@@ -31,6 +31,7 @@ setup(name=NAME,
           'setuptools',
           # -*- Extra requirements: -*-
           'eea.jquery',
+          'plone.browserlayer'
       ],
       extras_require={
           'test': ['plone.app.testing',]
