@@ -5,6 +5,9 @@ Changelog
 ----------------------
 * Upgrade step: Within "Plone > Site setup > Add-ons" click on
   upgrade button available for eea.tags
+* Change: don't copy schema when fiddling the subject field to add the tags
+  macro as its expensive and not needed
+  [ichimdav #13771]
 * Feature: added browser layer for this package in order to avoid checking for
   package installation in subtypes.py
   [ichimdav #13677]

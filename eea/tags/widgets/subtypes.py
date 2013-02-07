@@ -18,11 +18,8 @@ class SchemaModifier(object):
     def fiddle(self, schema):
         """ Modify schema
         """
-        if 'subject' not in schema:
-            return
-
-        xfield = schema['subject'].copy()
-        xfield.widget.macro = 'eea.tags'
-        xfield.widget.helper_js = ('++resource++eea.tags.js',)
-        xfield.widget.helper_css = ('++resource++eea.tags.css',)
-        schema['subject'] = xfield
+        if 'subject' in schema:
+            xfield = schema['subject']
+            xfield.widget.macro = 'eea.tags'
+            xfield.widget.helper_js = ('++resource++eea.tags.js',)
+            xfield.widget.helper_css = ('++resource++eea.tags.css',)
