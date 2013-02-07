@@ -1,8 +1,11 @@
 Changelog
 =========
 
-5.2-dev - (unreleased)
+5.3-dev - (unreleased)
 ----------------------
+
+5.2 - (2013-02-04)
+------------------
 * Upgrade step: Within "Plone > Site setup > Add-ons" click on
   upgrade button available for eea.tags
 * Change: don't copy schema when fiddling the subject field to add the tags
