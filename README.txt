@@ -17,7 +17,7 @@ EEA Tags is a Google+/Facebook like replacement for the Plone keywords widget.
 Install
 =======
 
-- Add eea.tags to your eggs and zcml section in your buildout and re-run buildout.
+- Add eea.tags to your eggs section in your buildout and re-run buildout.
 - Install eea.tags within Site Setup > Add-ons
 
 Upgrade

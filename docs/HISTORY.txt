@@ -3,6 +3,8 @@ Changelog
 
 5.3-dev - (unreleased)
 ----------------------
+* Added z3c.autoinclude entry point and remove refs from docs
+  [davilima6]
 
 5.2 - (2013-02-04)
 ------------------
