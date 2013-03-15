@@ -1,6 +1,9 @@
 Changelog
 =========
 
+5.4-dev - (unreleased)
+----------------------
+
 5.3 - (2013-03-15)
 ------------------
 * Added z3c.autoinclude entry point and remove refs from docs
