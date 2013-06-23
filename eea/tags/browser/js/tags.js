@@ -52,7 +52,7 @@ EEA.Tags.prototype = {
     if(prePopulate.length){
       prePopulate = prePopulate.val().split('\n');
       jQuery.each(prePopulate, function(index){
-        var val = this.trim();
+        var val = jQuery.trim(this);
         if(val && jQuery.inArray(val, existingTags) === -1){
           existingTags.push(val);
         }
