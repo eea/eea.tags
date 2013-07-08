@@ -1,8 +1,8 @@
 Changelog
 =========
 
-5.4-dev - (unreleased)
-----------------------
+5.4 - (2013-07-08)
+------------------
 * Updated tags.js to replace .trim function with jQuery equivalent to prevent error in IE8.
   [lardymike]
 
