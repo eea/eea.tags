@@ -3,6 +3,7 @@
     i18n_domain="eea">
 
     <includeDependencies package="."/>
+    <include file="documentation.zcml" />
     <include file="profiles.zcml" />
 
     <include package="plone.browserlayer" />

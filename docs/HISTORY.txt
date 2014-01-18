@@ -3,6 +3,8 @@ Changelog
 
 5.5-dev - (unreleased)
 ----------------------
+* Feature: adding Sphinx-generated documentation in Page Template format
+  [batradav refs #9502]
 
 5.4 - (2013-07-08)
 ------------------
