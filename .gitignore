@@ -5,5 +5,5 @@
 *.wpu
 *.log
 dist
-documentation/searchindex.js
-documentation/search.html
+searchindex.js
+search.html
