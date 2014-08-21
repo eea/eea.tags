@@ -48,7 +48,7 @@ EEA.Tags.prototype = {
     var existingTags = [];
 
     // Handle new tags
-    prePopulate = jQuery('textarea[name*=_keywords]', self.context);
+    var prePopulate = jQuery('textarea[name*=_keywords]', self.context);
     if(prePopulate.length){
       prePopulate = prePopulate.val().split('\n');
       jQuery.each(prePopulate, function(index){
@@ -72,7 +72,9 @@ EEA.Tags.prototype = {
     self.widget = jQuery('<textarea>')
       .attr('rows', '4')
       .attr('id', self.wid)
-      .attr('name', self.wid + ":lines").appendTo(self.context);
+      .attr('name', self.wid + ":lines")
+      .html(existingTags.join('\n'))
+      .appendTo(self.context);
 
     self.widget.tokenInput(self.tags, {
       theme: 'facebook',
@@ -83,7 +85,23 @@ EEA.Tags.prototype = {
       searchingText: self.settings.searchingText,
       noResultsText: self.settings.noResultsText,
       preventDuplicates: true,
-      prePopulate: self.prePopulate
+      prePopulate: self.prePopulate,
+      onAdd: function(item) {
+        self.widget[0].innerHTML += "\n" + item.name;
+      },
+      onDelete: function(item) {
+          var contents = self.widget[0];
+          var tokens = contents.innerHTML.split('\n');
+          var item_name = item.name;
+          var i, length, token, output = [];
+          for (i = 0, length = tokens.length; i < length; i += 1) {
+              token = tokens[i];
+              if (token !== item_name) {
+                output.push(token);
+              }
+          }
+          contents.innerHTML = output.join('\n');
+      }
     });
 
   }
