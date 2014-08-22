@@ -88,7 +88,11 @@ EEA.Tags.prototype = {
       prePopulate: self.prePopulate,
       onAdd: function(item) {
         var context = self.widget[0];
-        context.value += "\n" + item.name;
+          var current_tags = context.value.split('\n');
+          var new_tag_name = item.name;
+          if (current_tags.indexOf(new_tag_name) === -1) {
+              context.value += "\n" + new_tag_name;
+          }
       },
       onDelete: function(item) {
           var context = self.widget[0];
