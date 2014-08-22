@@ -73,7 +73,7 @@ EEA.Tags.prototype = {
       .attr('rows', '4')
       .attr('id', self.wid)
       .attr('name', self.wid + ":lines")
-      .html(existingTags.join('\n'))
+      .val(existingTags.join('\n'))
       .appendTo(self.context);
 
     self.widget.tokenInput(self.tags, {
@@ -87,11 +87,12 @@ EEA.Tags.prototype = {
       preventDuplicates: true,
       prePopulate: self.prePopulate,
       onAdd: function(item) {
-        self.widget[0].innerHTML += "\n" + item.name;
+        var context = self.widget[0];
+        context.value += "\n" + item.name;
       },
       onDelete: function(item) {
-          var contents = self.widget[0];
-          var tokens = contents.innerHTML.split('\n');
+          var context = self.widget[0];
+          var tokens = context.value.split('\n');
           var item_name = item.name;
           var i, length, token, output = [];
           for (i = 0, length = tokens.length; i < length; i += 1) {
@@ -100,7 +101,7 @@ EEA.Tags.prototype = {
                 output.push(token);
               }
           }
-          contents.innerHTML = output.join('\n');
+          context.value = output.join('\n');
       }
     });
 
