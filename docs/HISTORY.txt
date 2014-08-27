@@ -1,8 +1,8 @@
 Changelog
 =========
 
-5.6-dev - (unreleased)
-----------------------
+5.6 - (2014-08-27)
+------------------
 * Change: tags are now added and removed on the textarea to reflect the changes
   that can occour when using the jQuery token
   [ichimdav refs #20302]
