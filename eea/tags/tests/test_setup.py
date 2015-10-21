@@ -1,6 +1,6 @@
 """ Tests
 """
-import unittest2 as unittest
+import unittest
 from Products.CMFCore.utils import getToolByName
 from eea.tags.tests.base import EEA_TAGS_POLICY_INTEGRATION_TESTING
 
