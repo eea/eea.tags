@@ -3,6 +3,8 @@ Changelog
 
 5.9.dev0 - (unreleased)
 -----------------------
+* Bug fix: Fix pylint warnings
+  [ichim-david refs #71940]
 
 5.8 - (2016-03-01)
 ------------------
