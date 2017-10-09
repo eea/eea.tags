@@ -3,6 +3,8 @@ Changelog
 
 6.1.dev0 - (unreleased)
 -----------------------
+* Change: Remove Sphinx generated documentation
+  [petchesi-iulian refs #88212]
 
 6.0 - (2017-04-24)
 ------------------
