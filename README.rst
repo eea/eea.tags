@@ -57,7 +57,7 @@ Links
 =====
 
 1. EEA Tags request ticket:
-   https://svn.eionet.europa.eu/projects/Zope/ticket/4563
+   https://taskman.eionet.europa.eu
 
 
 Funding
