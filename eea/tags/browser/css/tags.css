@@ -18,3 +18,7 @@ div li.token-input-input-token-facebook {
 .eea-tags-i18n {
   display: none;
 }
+
+div.token-input-dropdown-facebook {
+  z-index: 1005;
+}
