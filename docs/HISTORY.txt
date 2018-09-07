@@ -3,6 +3,8 @@ Changelog
 
 6.3 - (2018-09-07)
 -----------------------
+* Bug fix: Fix drop-down z-index
+  [szabozo0 refs #97571]
 * Change: updated URLs pointing to eea.europa.eu with https://
   [alecghica refs #95849]
 
