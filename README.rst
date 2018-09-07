@@ -1,8 +1,12 @@
 ========
 EEA Tags
 ========
-.. image:: http://ci.eionet.europa.eu/job/eea/job/eea.tags/job/master/badge/icon
-  :target: http://ci.eionet.europa.eu/job/eea/job/eea.tags/job/master/display/redirect
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=eea/eea.tags/develop
+  :target: https://ci.eionet.europa.eu/job/eea/job/eea.tags/job/develop/display/redirect
+  :alt: develop
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=eea/eea.tags/master
+  :target: https://ci.eionet.europa.eu/job/eea/job/eea.tags/job/master/display/redirect
+  :alt: master
 
 Introduction
 ============
@@ -53,7 +57,7 @@ Links
 =====
 
 1. EEA Tags request ticket:
-   https://svn.eionet.europa.eu/projects/Zope/ticket/4563
+   https://taskman.eionet.europa.eu
 
 
 Funding
@@ -61,4 +65,4 @@ Funding
 
 EEA_ - European Enviroment Agency (EU)
 
-.. _EEA: http://www.eea.europa.eu/
+.. _EEA: https://www.eea.europa.eu/
