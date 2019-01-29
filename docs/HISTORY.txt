@@ -1,6 +1,11 @@
 Changelog
 =========
 
+6.4 - (2019-01-28)
+---------------------
+* Jenkins: Add sonarqube step
+  [avoinea refs #101552]
+
 6.3 - (2018-09-07)
 -----------------------
 * Bug fix: Fix drop-down z-index
@@ -134,4 +139,3 @@ Changelog
 1.0 - (2011-10-04)
 ------------------
 * Initial release
-
